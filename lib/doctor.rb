@@ -20,6 +20,6 @@ class Doctor
   end
   
   def patients
-    Appointment.all.map {|elemenmt| element.patient}
+    Appointment.all.map {|element| element.patient}
   end
 end
