@@ -16,10 +16,10 @@ class Doctor
   end
   
   def appointments
-    
+    Appointment.all.select {|element| element.doctor == self}
   end
   
   def patients
-    
+    Appointment.all.map {|elemenmt| element.patient}
   end
 end
